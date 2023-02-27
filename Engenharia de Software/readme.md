@@ -18,6 +18,8 @@ Engenharia de Software abrange todo processo de geração do software, sendo que
 Embora a programação seja um dos pilares da engenharia de software, pois é através dela que os softwares são criados, a engenharia de software envolve também o fator tempo, isto é, envolve a preocupação com prazos de entrega e também envolve práticas que irão manter o programa em bom funcionamento a longo prazo.
 
 ### 2) O QUE SÃO REQUISITOS?
+São citérios que o software precisa atender.
+
 A) FUNCIONAIS:
 São características ou funções que os desenvolvedores precisam implementar para que torne possível o usuário usar uma funcionalidade. Exemplo: sistema de autenticação, interface, um dashboard que permita ao usuário visualização de diversos dados.
 
@@ -25,4 +27,4 @@ B) NÃO FUNCIONAIS:
 São características do design do sistema que irão melhorar a forma de execução de uma funcionalidade. Exemplo: implemento de um código que irá tornar possível que milhares de usuários utilizem uma funcionalidade ao mesmo tempo, uma interface que seja adapatada pra que um tipo específico de usuário use o sistema com mais facilidade, como um interface simples e intuitiva para o público idoso.
 
 C) EXEMPLOS DE TRADE-OFFS EM REQUISITOS NÃO FUNCIONAIS: 
-O aumento de segurança em um sistema pode tornar a execução da funcionalidade mais lenta. Melhorar a usabilidade para um público que tem mais dificuldade em usar um software pode exigir diminuição de eficiência, como por exemplo, mais passos para execução de uma funcionalidade.
+O uso de uma linguagem mais difícil (exemplo: java), isto é, mais próxima da linguagem da máquina permite maior portabilidade, porém pode ter como consequencia uma manutenção mais complicada. Melhorar a usabilidade para um público que tem mais dificuldade em usar um software pode exigir diminuição de eficiência, como por exemplo, mais passos para execução de uma funcionalidade.
