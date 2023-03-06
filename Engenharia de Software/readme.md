@@ -28,3 +28,8 @@ São características do design do sistema que irão melhorar a forma de execuç
 
 C) EXEMPLOS DE TRADE-OFFS EM REQUISITOS NÃO FUNCIONAIS: 
 O uso de uma linguagem mais difícil (exemplo: java), isto é, mais próxima da linguagem da máquina permite maior portabilidade, porém pode ter como consequencia uma manutenção mais complicada. Melhorar a usabilidade para um público que tem mais dificuldade em usar um software pode exigir diminuição de eficiência, como por exemplo, mais passos para execução de uma funcionalidade.
+
+# 06/03/2023
+## FAZER UML QUALQUER SISTEMA DA SUA ESCOLHA
+### Primeira Versão
+
