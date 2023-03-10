@@ -34,3 +34,35 @@ O uso de uma linguagem mais difícil (exemplo: java), isto é, mais próxima da 
 ### Primeira Versão
 ![alt text for screen readers](https://github.com/taniacruzz/BERTOTI/blob/main/Engenharia%20de%20Software/UML.jpg)
 
+# 10/03/2023
+
+public class Estoque {
+    
+    private List<Produto> produtos = new List<Produto>;
+    public int capacidade;
+    public String localizacao;
+    
+        
+    public void addProduto(Produto prod){
+        produtos.add(prod);
+    
+    }
+    
+    public List<Produto> buscarProdutoPorNome(String nomeProduto){
+        List<Produto> produtosResult = new List<Produto>;
+        for (Produto produto: produtos){
+            if produto.getName().equals(nomeProduto){
+                produtosResult.add(produto)
+
+            }
+        }
+        return produtosResult;
+    }
+        
+    
+    public static void main(String[] args){
+ 
+    }
+            
+}
+
