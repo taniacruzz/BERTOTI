@@ -1,9 +1,9 @@
-package EngenhariaDeSoftware;
+// package EngenhariaDeSoftware;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Familia{
+public class Familia {
    
     int nDeFamiliares;
     List<Filho> filhos;
@@ -11,9 +11,12 @@ public class Familia{
     boolean patriarcal;
     List<Parente> parentes;
 
+
     // public Familia(){
     //     this.parentes = 
     // }
+
+    
     
     
 
