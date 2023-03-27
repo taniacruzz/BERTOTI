@@ -25,6 +25,9 @@ Os requisitos não funcionais não são sinonimos de quais funcionalidades o sof
 c. Dê 2 exemplos de trade-offs em requisitos não funcionais:
 Um sistema mais intuitivo e didático pode sacrificar sua eficiência, demandando mais passos para a realização de uma tarefa. Um sistema com boa portabilidade pode requerer o desenvolvimento em uma linguagem de baixo nível, o que torna o desenvolvimento mais complexo.
 
+# 27/02
+![diagrama de classes UML para o sistema Acadêmico](https://github.com/taniacruzz/BERTOTI/blob/b067bc2bbb754fc7638ca3b01f318d17b3aeb6a1/Engenharia%20de%20Software/Diagrama%20Sistema%20Acad%C3%AAmico.jpg)
+
 # 06/03
 
 ![diagrama de classes UML para o sistema Familia](https://github.com/taniacruzz/BERTOTI/blob/e330c76ced48d035c94dbb27cd7091073cf6f601/Engenharia%20de%20Software/Diagrama%20sem%20nome.drawio.png)
