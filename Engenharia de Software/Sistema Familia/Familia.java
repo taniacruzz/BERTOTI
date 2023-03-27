@@ -5,16 +5,23 @@ import java.util.Random;
 
 public class Familia {
    
-    int nDeFamiliares;
-    List<Filho> filhos;
-    Chefe chefeDeFamilia;
-    boolean patriarcal;
-    List<Parente> parentes;
+    private int nDeFamiliares;
+    private List<Filho> filhos;
+    private Chefe chefeDeFamilia;
+    private boolean patriarcal;
+    private List<Parente> parentes;
 
+    public Familia(int nDeFamiliares,List<Filho> filhos, Chefe chefeDeFamilia, boolean patriarcal, List<Parente> parentes){
+        this.nDeFamiliares = nDeFamiliares;
+        this.filhos = filhos;
+        this.chefeDeFamilia = chefeDeFamilia;
+        this.patriarcal = patriarcal;
+        this.parentes = parentes;
+        
+    }
 
-    // public Familia(){
-    //     this.parentes = 
-    // }
+    public get
+
 
     
     
