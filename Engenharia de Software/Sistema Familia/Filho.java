@@ -1,15 +1,36 @@
 // package EngenhariaDeSoftware;
 public class Filho {
-    String nome;
-    Integer idade;
+    private String nome;
+    private int idade;
 
-     public static void atormentarOsPais(){
+    public Filho(String nome, int idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
 
-     }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
 
-     public static void fazerAlgoQuePreste(){
+    public void setIdade(int idade){
+        this.idade = idade;
+    }
+
+    public String getNome(){
+        return nome;
+    }
+
+    public int getIdade(){
+        return idade;
+    }
+
+    public static void atormentarOsPais(){
+
+    }
+
+    public static void fazerAlgoQuePreste(){
         
-     }
+    }
 
     
 }

@@ -20,14 +20,30 @@ public class Familia {
         
     }
 
-    public get
+   
 
+    public void setnDeFamiliares(int nDeFamiliares){
+        this.nDeFamiliares = nDeFamiliares;
+        
+    }
+
+    public void setParentes(List<Parente> parentes){
+        this.parentes = parentes;
+    }
+
+    public int getnDeFamiliares(){
+        return nDeFamiliares;
+    }
+
+    public List<Parente> getParentes(){
+        return parentes;
+    }
 
     
-    
-    
+ 
+        
 
-    public Parente decidirAlvoDaFofoca(){
+    public Parente decidirAlvoDaFofoca(List<Parente> parentes){
         Random random = new Random();
         int randomIndex = random.nextInt(parentes.size());
         return parentes.get(randomIndex);
@@ -35,6 +51,12 @@ public class Familia {
     }
 
     public static void fofocar(Parente parente){
+        if(parente.getVisaoPolitica() == "Direita"){
+            System.out.println("bora fofocar");
+        }
+        else{
+            System.out.println("Deixa baixo");
+        }
 
     }
         

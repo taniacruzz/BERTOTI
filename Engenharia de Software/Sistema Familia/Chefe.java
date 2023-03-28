@@ -4,8 +4,14 @@ public class Chefe{
     Double salario;
     boolean toxico;
 
+    public Chefe(String nome, Double salario, boolean toxico){
+        this.nome = nome;
+        this.salario = salario;
+        this.toxico = toxico;
+    }
+
     public boolean expulsarFilhoeeCasa (Filho filho){
-        if(filho.idade > 18){
+        if(filho.getIdade() > 18){
             return true;
         }
         else{
