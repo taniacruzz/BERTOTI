@@ -1,10 +1,16 @@
 // package EngenhariaDeSoftware;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 
 public class Teste {
     public static void main(String[]args){
+        // List<Integer> parentes_teste = Arrays.asList(1, 6, 7, 8);
+        // Random random = new Random();
+        // int randomIndex = parentes_teste.get(random.nextInt(parentes_teste.size()));
+        // System.out.print(randomIndex);
 
         // Teste sem colocar private nos atributos de parente
         // Parente parente1 = new Parente();
@@ -42,7 +48,7 @@ public class Teste {
         }
 
         Parente parenteAlvo = familia.decidirAlvoDaFofoca(familia.getParentes());
-        System.out.print(parenteAlvo.getNome());
+        System.out.printf("o alvo da fofoca é %s \n", parenteAlvo.getNome());
 
         
 

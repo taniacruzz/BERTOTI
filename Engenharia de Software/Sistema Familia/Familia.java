@@ -40,22 +40,30 @@ public class Familia {
     }
 
     
- 
         
 
     public Parente decidirAlvoDaFofoca(List<Parente> parentes){
-        Random random = new Random();
-        int randomIndex = random.nextInt(parentes.size());
-        return parentes.get(randomIndex);
+        Parente parenteAlvo = null;
+        while(parenteAlvo == null){
+            Random random = new Random();
+            Parente parentePotencial = parentes.get(random.nextInt(parentes.size()));
+            if (parentePotencial.getVisaoPolitica() == "Direita"){
+                parenteAlvo = parentePotencial;
+                
+            }
+            
+        }
+        return parenteAlvo;
+        
         
     }
 
     public static void fofocar(Parente parente){
         if(parente.getVisaoPolitica() == "Direita"){
-            System.out.println("bora fofocar");
+            System.out.printf("Bora fofocar sobre a %s \n", parente.getNome());
         }
         else{
-            System.out.println("Deixa baixo");
+            System.out.printf("%s não merece ser alvo de fofoca \n", parente.getNome());
         }
 
     }

@@ -10,7 +10,7 @@ public class Chefe{
         this.toxico = toxico;
     }
 
-    public boolean expulsarFilhoeeCasa (Filho filho){
+    public boolean expulsarFilhodeCasa (Filho filho){
         if(filho.getIdade() > 18){
             return true;
         }
