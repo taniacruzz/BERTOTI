@@ -22,6 +22,7 @@ public class Teste {
         parente1.setNome("Tia Claudia");
         parente1.setGrauDeParentesco(2);
         parente1.setVisaoPolitica("Direita");
+        
 
         Parente parente2 = new Parente();
         parente2.setNome("Primo Marx");

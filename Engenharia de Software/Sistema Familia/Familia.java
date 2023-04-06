@@ -59,7 +59,7 @@ public class Familia {
     }
 
     public static void fofocar(Parente parente){
-        if(parente.getVisaoPolitica() == "Direita"){
+        if(parente.getVisaoPolitica() == "Direita" & parente.serChato() == true){
             System.out.printf("Bora fofocar sobre a %s \n", parente.getNome());
         }
         else{
