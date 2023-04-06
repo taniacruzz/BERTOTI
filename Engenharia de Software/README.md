@@ -34,3 +34,7 @@ Um sistema mais intuitivo e didático pode sacrificar sua eficiência, demandand
 
 # 28/03
 ![diagrama de classes UML para o sistema Família atualizado](https://github.com/taniacruzz/BERTOTI/blob/076ed7c0ed59f304d64abe392195eff57611a35c/Engenharia%20de%20Software/Sistema%20Familia/C%C3%B3pia%20do%20Diagrama%20sem%20nome%20(1).drawio.png)
+
+# 03/04
+![casos de uso](https://github.com/taniacruzz/BERTOTI/blob/11e71854eff254b79d2e47e8747de00b0c602455/Engenharia%20de%20Software/Sistema%20Familia/Casos%20de%20uso.drawio.png)
+
