@@ -27,5 +27,7 @@ public class Chefe{
     public Double trabalhar(){
         return this.salario;
 
+    // teste
+
     }
 }
