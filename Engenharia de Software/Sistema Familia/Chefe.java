@@ -11,16 +11,12 @@ public class Chefe{
     }
 
     public boolean expulsarFilhodeCasa (Filho filho){
-        if(filho.getIdade() > 18){
+        if(filho.getIdade() > 18 && filho.getTrabalha() == true){
             return true;
         }
         else{
             return false;
         }
-
-    }
-
-    public void darAmor(Filho filho){
 
     }
 

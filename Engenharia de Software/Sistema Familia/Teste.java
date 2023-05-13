@@ -33,8 +33,8 @@ public class Teste {
         parentes.add(parente1);
         parentes.add(parente2);
 
-        Filho filho1 = new Filho("Enzo", 19);
-        Filho filho2 = new Filho("Valentina", 16);
+        Filho filho1 = new Filho("Enzo", 19, true);
+        Filho filho2 = new Filho("Valentina", 16, false);
 
         List<Filho> filhos = new ArrayList<Filho>();
         filhos.add(filho1);
@@ -42,11 +42,7 @@ public class Teste {
 
         Chefe chefe = new Chefe("Patricia", 5000.00, false);
 
-        Familia familia = new Familia(4, filhos, chefe, false, parentes);
-
-        for(Parente parente: parentes){
-            Familia.fofocar(parente);
-        }
+        Familia familia = new Familia(4, filhos, chefe, false, parentes, "Direita");
 
         Parente parenteAlvo = familia.decidirAlvoDaFofoca(familia.getParentes());
         System.out.printf("o alvo da fofoca é %s \n", parenteAlvo.getNome());
