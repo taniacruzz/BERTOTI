@@ -29,10 +29,14 @@ public class Autorizacao {
 
 
     public static void main(String[]args){
-        System.out.print("oi");
-       List<String> motivosAceitos = new ArrayList<>();
-       motivosAceitos.add("ola");
-       System.out.print(motivosAceitos);
+        OrgaoLicenciador orgaoLicenciador = new OrgaoLicenciador("São Paulo", "Cetesb");
+        List<String> motivosAexcluir = new ArrayList<>();
+        List<String> motivosAincluir = new ArrayList<>();
+        motivosAincluir.add("interesse social");
+        motivosAincluir.add("baixo impacto");
+        motivosAincluir.add("utilidade pública");
+        orgaoLicenciador.editaMotivosAceitos(motivosAexcluir, motivosAincluir);
+        
     
     }   
 }

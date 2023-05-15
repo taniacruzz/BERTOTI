@@ -15,7 +15,7 @@ public class Interessado {
             String endereco, boolean area, List<Arvore> arvoresSolicitadas, String motivo){
         Obra obrasolicitada = new Obra(zonaRural, ZonaApp, corteDeArvores, endereco, area, arvoresSolicitadas, motivo);
         obrasolicitada.setMotivo(motivo.toLowerCase());
-        if(OrgaoLicenciador.concederAutorizacao(obrasolicitada) == true)
+        if(OrgaoLicenciador.concederAutorizacao(obrasolicitada) == true){}
     }
     
     public void realizarCompensacaoAmbiental(){
