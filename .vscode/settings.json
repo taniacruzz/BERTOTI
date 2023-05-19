@@ -1,3 +1,16 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "Engenharia de Software/Sistema Familia",
+        "Engenharia de Software/Sistema Autorização Ambiental/Classes"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Engenharia de Software/jcoord-1.0.jar",
+        "Engenharia de Software/geodesy-1.1.3-javadoc.jar",
+        "Engenharia de Software/Sistema Autorização Ambiental/libs/geodesy-1.1.3-javadoc.jar",
+        "Engenharia de Software/Sistema Autorização Ambiental/libs/hamcrest-core-2.2.jar",
+        "Engenharia de Software/Sistema Autorização Ambiental/libs/jcoord-1.0.jar",
+        "Engenharia de Software/Sistema Autorização Ambiental/libs/junit-4.13.2.jar"
+    ]
 }

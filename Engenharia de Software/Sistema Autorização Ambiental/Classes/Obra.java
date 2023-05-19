@@ -6,12 +6,12 @@ public class Obra {
     private boolean zonaApp;
     private boolean corteDeArvores;
     private String endereço;
-    private Boolean area;
+    private Double area;
     private List<Arvore> arvoresSolicitadas = new ArrayList<>(0);
     private String motivo;
     
     
-    public Obra(boolean zonaRural, boolean zonaApp, boolean corteDeArvores, String endereço, Boolean area,
+    public Obra(boolean zonaRural, boolean zonaApp, boolean corteDeArvores, String endereço, Double area,
     List<Arvore> arvoresSolicitadas, String motivo) {
         this.zonaRural = zonaRural;
         this.zonaApp = zonaApp;
@@ -22,6 +22,7 @@ public class Obra {
         this.motivo = motivo;
     }
     
+    // GETTERS E SETTERS
     public void setMotivo(String motivo) {
         this.motivo = motivo;
     }
@@ -42,7 +43,7 @@ public class Obra {
         return endereço;
     }
 
-    public Boolean getArea() {
+    public Double getArea() {
         return area;
     }
 
