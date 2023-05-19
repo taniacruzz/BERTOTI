@@ -5,7 +5,7 @@ import java.util.List;
 public class OrgaoLicenciador {
     private String areaDeAtuacao;
     private String nome;
-    static List<String> motivosAceitos;
+    static private List<String> motivosAceitos = new ArrayList<String>();
     
     public OrgaoLicenciador(String areaDeAtuacao, String nome) {
         this.areaDeAtuacao = areaDeAtuacao;
@@ -50,9 +50,32 @@ public class OrgaoLicenciador {
     }
 
     public List<String> editarMotivosAceitos(List<String> motivosExcluir, List<String> motivosIncluir){
-        for(String motivoToExclude: motivosExcluir){motivosAceitos.remove(String.valueOf(motivoToExclude));}
-        for(String motivoToInclude: motivosIncluir){motivosAceitos.add(motivoToInclude);}
+        Integer auxiliar = 0;
+        if(motivosAceitos.isEmpty()){for(String primeirosMotivos: motivosIncluir){motivosAceitos.add(primeirosMotivos);}}
+        else{
+        for(String motivoToExclude: motivosExcluir){
+            for(Integer i = 0; i < motivosAceitos.size(); ++i){
+                if(motivoToExclude == motivosAceitos.get(i)){
+                    motivosAceitos.remove(i);
+
+                }
+            }
+        }
+        for(String motivoToInclude: motivosIncluir){
+            for(Integer i = 0; i < motivosAceitos.size(); ++i){
+                if(motivoToInclude == motivosAceitos.get(i)){
+                    auxiliar = 1;
+                }
+            if(auxiliar == 0){
+                motivosAceitos.add(motivoToInclude);
+            }
+            auxiliar = 0;
+            }
+        }
+    }
+        
         return motivosAceitos;
+
 
     }
     

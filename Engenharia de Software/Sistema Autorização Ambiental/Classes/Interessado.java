@@ -7,35 +7,49 @@ public class Interessado {
     private String razaoSocial;
     private String endereco;
     private String atividadePrincipal;
-    private AutorizacaoType objetivoPedido;
     private List<Obra> obrasSolicitadas = new ArrayList<>();
     private List<Obra> obrasAutorizadas = new ArrayList<>();
 
     
 
-    public Interessado(String razaoSocial, String endereco, String atividadePrincipal, AutorizacaoType objetivoPedido,
-            List<Obra> obrasSolicitadas, List<Obra> obrasAutorizadas) {
+    public Interessado(String razaoSocial, String endereco, String atividadePrincipal, List<Obra> obrasSolicitadas, List<Obra> obrasAutorizadas) {
         this.razaoSocial = razaoSocial;
         this.endereco = endereco;
         this.atividadePrincipal = atividadePrincipal;
-        this.objetivoPedido = objetivoPedido;
         this.obrasSolicitadas = obrasSolicitadas;
         this.obrasAutorizadas = obrasAutorizadas;
     }
 
-    public void solicitarAutorizacao(boolean zonaRural, boolean ZonaApp, boolean corteDeArvores, 
-            String endereco, Double area, List<Arvore> arvoresSolicitadas, String motivo){
-        Obra obraSolicitada = new Obra(zonaRural, ZonaApp, corteDeArvores, endereco, area, arvoresSolicitadas, motivo);
-        obraSolicitada.setMotivo(motivo.toLowerCase());
+    public void solicitarAutorizacao(Obra obraSolicitada){
         OrgaoLicenciador orgaoLicenciador;        
-        if(zonaRural == false){orgaoLicenciador = new OrgaoLicenciador("São Paulo", "Cetesb");}
+        if(obraSolicitada.isZonaRural() == true){orgaoLicenciador = new OrgaoLicenciador("São Paulo", "Cetesb");}
         else{orgaoLicenciador = new OrgaoLicenciador("Municipio", "Secretaria de Meio Ambiente");}
-        orgaoLicenciador.concederAutorizacao(obraSolicitada);
-
+        Boolean resposta = orgaoLicenciador.concederAutorizacao(obraSolicitada);
+        if(resposta == true){obrasAutorizadas.add(obraSolicitada);}
         
     }
     
     public void realizarCompensacaoAmbiental(){
 
+    }
+
+    public String getRazaoSocial() {
+        return razaoSocial;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public String getAtividadePrincipal() {
+        return atividadePrincipal;
+    }
+
+    public List<Obra> getObrasSolicitadas() {
+        return obrasSolicitadas;
+    }
+
+    public List<Obra> getObrasAutorizadas() {
+        return obrasAutorizadas;
     }
 }

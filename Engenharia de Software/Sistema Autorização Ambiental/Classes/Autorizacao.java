@@ -52,8 +52,32 @@ public class Autorizacao {
         motivosAincluir.add("interesse social");
         motivosAincluir.add("baixo impacto");
         motivosAincluir.add("utilidade pública");
+        orgaoLicenciador.editarMotivosAceitos(motivosAexcluir, motivosAincluir);
 
+        List<Arvore> arvores = new ArrayList<Arvore>();
+        Arvore arvore1 = new Arvore("pinheiro", 3.0, 12.0, 397738.0, 7424744.0);
+        Arvore arvore2 = new Arvore("ypê", 5.0, 11.0, 397751.0, 7424744.0);
+        Arvore arvore3 = new Arvore("leucena", 6.0, 15.0, 397754.0, 7424722.0);
+        Arvore arvore4 = new Arvore("abacateiro", 4.0, 12.0, 397694.0, 7424735.0);
+        arvores.add(arvore1);
+        arvores.add(arvore2);
+        arvores.add(arvore3);
+        arvores.add(arvore4);
+
+        Obra obraASolicitar = new Obra(true, false, true, "Rua de terra", 1000.0, arvores, "interesse social");
+        Obra obraASolicitar2 = new Obra(false, false, true, "Rua de terra", 1000.0, arvores, "interesse social");
+        List<Obra> obrasASolicitar = new ArrayList<>();
+        obrasASolicitar.add(obraASolicitar);
+        obrasASolicitar.add(obraASolicitar2);
+        List<Obra> obrasAutorizadas = new ArrayList<>();
+
+        Interessado interessado = new Interessado("Energeticus", "Rua Andromeda", "produção de cabos",
+            obrasASolicitar, obrasAutorizadas);
         
+        for(Obra obra: obrasASolicitar){
+            interessado.solicitarAutorizacao(obra);
+
+        }
 
     }
    
