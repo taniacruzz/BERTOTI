@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,11 +22,41 @@ public class Interessado {
     }
 
     public void solicitarAutorizacao(Obra obraSolicitada){
-        OrgaoLicenciador orgaoLicenciador;        
+        Autorizacao autorizacao;
+        OrgaoLicenciador orgaoLicenciador;
+        AutorizacaoType autorizacaoType;        
         if(obraSolicitada.isZonaRural() == true){orgaoLicenciador = new OrgaoLicenciador("São Paulo", "Cetesb");}
         else{orgaoLicenciador = new OrgaoLicenciador("Municipio", "Secretaria de Meio Ambiente");}
         Boolean resposta = orgaoLicenciador.concederAutorizacao(obraSolicitada);
-        if(resposta == true){obrasAutorizadas.add(obraSolicitada);}
+        if(resposta == true){
+            obrasAutorizadas.add(obraSolicitada);
+            if(obraSolicitada.isZonaApp() == true){
+                autorizacaoType = AutorizacaoType.IntervencaoEmAPP;
+                
+            }
+            else if(orgaoLicenciador.calculateAverageDistance(obraSolicitada.getArvoresSolicitadas())>2){
+                autorizacaoType = AutorizacaoType.CorteArvoresIsoladas;
+                
+            }
+            
+            else{
+                autorizacaoType = AutorizacaoType.CorteDeFragmento;
+                
+            }
+
+            autorizacao = new Autorizacao (
+                    this, 
+                    LocalDate.now(), 
+                    LocalDate.now().plusYears(2), 
+                    obraSolicitada, 
+                    autorizacaoType,
+                    orgaoLicenciador, 
+                    obraSolicitada.getArea(), 
+                    obraSolicitada.getArvoresSolicitadas(), 
+                    true
+                );
+            
+        }
         
     }
     

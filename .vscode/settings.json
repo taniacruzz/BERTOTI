@@ -12,5 +12,6 @@
         "Engenharia de Software/Sistema Autorização Ambiental/libs/hamcrest-core-2.2.jar",
         "Engenharia de Software/Sistema Autorização Ambiental/libs/jcoord-1.0.jar",
         "Engenharia de Software/Sistema Autorização Ambiental/libs/junit-4.13.2.jar"
-    ]
+    ],
+    "java.dependency.syncWithFolderExplorer": false
 }

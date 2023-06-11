@@ -11,6 +11,7 @@ public class Autorizacao {
     private LocalDate dataEmissao;
     private LocalDate dataValidade;
     private Obra obra;
+    private AutorizacaoType autorizacaoType;
     private OrgaoLicenciador orgaoLicenciador;
     private Double areaConcedida;
     private List<Arvore> arvoresAutorizadas = new ArrayList<>();
@@ -30,8 +31,6 @@ public class Autorizacao {
     }
 
 
-
-
     public boolean mudarStatus(){
         LocalDate dataAtual = LocalDate.now();
         
@@ -41,7 +40,6 @@ public class Autorizacao {
         }
         return status;
     }
-
     
 
 
