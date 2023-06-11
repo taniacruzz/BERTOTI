@@ -43,7 +43,14 @@ Um sistema mais intuitivo e didático pode sacrificar sua eficiência, demandand
 ## Sistema de Autorização Ambiental
 ![diagrama de classes UML para o sistema de Autorização Ambiental](https://github.com/taniacruzz/BERTOTI/blob/0c999c58bb3fdabc363df649bd2421bf9e3639fb/Engenharia%20de%20Software/Sistema%20Autoriza%C3%A7%C3%A3o%20Ambiental/Diagramas/uml.png)
 
-![casos de uso para o sistema de Autorização Ambiental](https://github.com/taniacruzz/BERTOTI/blob/c82c1b4758e7c567a77d88d0305637a50940e0dc/Engenharia%20de%20Software/Sistema%20Autoriza%C3%A7%C3%A3o%20Ambiental/Diagramas/uso.png))
+![casos de uso para o sistema de Autorização Ambiental](https://github.com/taniacruzz/BERTOTI/blob/c82c1b4758e7c567a77d88d0305637a50940e0dc/Engenharia%20de%20Software/Sistema%20Autoriza%C3%A7%C3%A3o%20Ambiental/Diagramas/uso.png)
+
+# 11/06
+## Sistema de Autorização Ambiental
+![diagrama de classes UML para o sistema de Autorização Ambiental](https://github.com/taniacruzz/BERTOTI/blob/49ed55d0d45277499b456793351478f9c22643c0/Engenharia%20de%20Software/Sistema%20Autoriza%C3%A7%C3%A3o%20Ambiental/Diagramas/uml2.png)
+
+![casos de uso para o sistema de Autorização Ambiental](https://github.com/taniacruzz/BERTOTI/blob/49ed55d0d45277499b456793351478f9c22643c0/Engenharia%20de%20Software/Sistema%20Autoriza%C3%A7%C3%A3o%20Ambiental/Diagramas/uso2.png)
+
 
 
 
