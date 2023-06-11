@@ -38,3 +38,15 @@ Um sistema mais intuitivo e didático pode sacrificar sua eficiência, demandand
 # 03/04
 ![casos de uso](https://github.com/taniacruzz/BERTOTI/blob/11e71854eff254b79d2e47e8747de00b0c602455/Engenharia%20de%20Software/Sistema%20Familia/Casos%20de%20uso.drawio.png)
 
+
+# 19/05
+## Sistema de Autorização Ambiental
+![diagrama de classes UML para o sistema de Autorização Ambiental](https://github.com/taniacruzz/BERTOTI/blob/0c999c58bb3fdabc363df649bd2421bf9e3639fb/Engenharia%20de%20Software/Sistema%20Autoriza%C3%A7%C3%A3o%20Ambiental/Diagramas/uml.png)
+
+![casos de uso para o sistema de Autorização Ambiental](https://github.com/taniacruzz/BERTOTI/blob/c82c1b4758e7c567a77d88d0305637a50940e0dc/Engenharia%20de%20Software/Sistema%20Autoriza%C3%A7%C3%A3o%20Ambiental/Diagramas/uso.png))
+
+
+
+
+
+
