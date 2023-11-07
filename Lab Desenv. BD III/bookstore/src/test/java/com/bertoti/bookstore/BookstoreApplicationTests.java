@@ -1,10 +1,10 @@
-package com.thehecklers.sburrestdemo;
+package com.bertoti.bookstore;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SburRestDemoApplicationTests {
+class BookstoreApplicationTests {
 
 	@Test
 	void contextLoads() {
