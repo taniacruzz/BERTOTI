@@ -48,4 +48,7 @@ public class Book {
 
     @Column(name="book_description")
     private String description;
+
+    @Column(name="forSale")
+    private Boolean forSale;
 }
