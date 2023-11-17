@@ -39,11 +39,11 @@ public class Book {
     private BookType type;
 
     @ManyToOne
-    @JoinColumn(name="sel_id")
+    @JoinColumn(name="sel_id", referencedColumnName = "sel_id")
     private Seller seller;
 
     @ManyToOne
-    @JoinColumn(name="aut_id")
+    @JoinColumn(name="aut_id", referencedColumnName = "aut_id")
     private Author author;
 
     @Column(name="book_description")

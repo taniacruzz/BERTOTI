@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import viteLogo from '/vite.svg'
 import BookForm from './components/BookForm'
+import Home from './pages/Home'
 import './App.css'
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="books" element={<BookForm successCallback = {() => {}} errorCallback={() => {}}/>} />
+          <Route path="books" element={<Home />} />
         </Routes>
       </BrowserRouter >
     </>

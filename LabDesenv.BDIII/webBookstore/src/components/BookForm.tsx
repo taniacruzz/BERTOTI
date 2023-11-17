@@ -56,13 +56,15 @@ export default function BookForm({successCallback, errorCallback }: BookFormProp
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Título" onChange={handleTitleChange}/>
-            <input type="text" placeholder="Estado" onChange={handleTypeChange}/>
-            <input type="text" placeholder="Vendedor" onChange={handleSellerChange}/>
-            <input type="text" placeholder="Autor" onChange={handleAuthorChange}/>
-            <input type="text" placeholder="Descrição" onChange={handleDescriptionChange}/>
-            <button type="submit">Cadastrar</button>
-        </form>
+        <div className="form">
+            <form onSubmit={handleSubmit}>
+                <input type="text" placeholder="Título" onChange={handleTitleChange}/>
+                <input type="text" placeholder="Estado" onChange={handleTypeChange}/>
+                <input type="text" placeholder="Vendedor" onChange={handleSellerChange}/>
+                <input type="text" placeholder="Autor" onChange={handleAuthorChange}/>
+                <input type="text" placeholder="Descrição" onChange={handleDescriptionChange}/>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
     );
 }

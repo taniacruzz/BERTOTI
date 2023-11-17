@@ -1,9 +1,21 @@
 
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
 import { BookSchema } from '../schemas/Book';
 
 
 const API_URL = 'http://127.0.0.1:8080/books';
+
+async function mapResponse(response: AxiosResponse): Promise<BookSchema[]> {
+    return response.data.map((item: any) => ({
+        id: item.id ? item.id : "N/A",
+        title: item.title ? item.title : "N/A",
+        bookType: item.bookType ? item.bookType : "N/A",
+        sellerId: item.sellerId ? item.sellerId : "N/A",
+        authorId: item.authorId ? item.authorId : "N/A",
+        description: item.description ? item.description : "N/A",
+        forSale: item.forSale ? item.forSale : "N/A",
+    })) as BookSchema[]
+}
 
 export async function postBook(book: BookSchema) {
     return await fetch(API_URL, {
@@ -16,4 +28,9 @@ export async function postBook(book: BookSchema) {
     .then((data)=> console.log(data))
     .catch(error => console.error(error));
     
+}
+
+export async function getBooks(): Promise<BookSchema[]> {
+    const response = await axios.get(`${API_URL}`, {method: 'GET'});
+    return await mapResponse(response);
 }
