@@ -3,9 +3,9 @@ import type { ColumnsType } from 'antd/es/table';
 import { useEffect, useState } from 'react';
 import BookForm from '../components/BookForm';
 // import Popup, { PopupSchema } from '../components/PopUp';
-import { BookSchema } from '../schemas/Book';
+import { GetBookSchema, PostBookSchema } from '../schemas/Book';
 
-import { getBooks } from '../services/BookService';
+import { deleteBook, getBooks } from '../services/BookService';
 
 interface HomeProps {
     successCallback: () => void;
@@ -13,7 +13,7 @@ interface HomeProps {
 }
 
 export default function Books() {
-    const [books, setBooks] = useState<BookSchema[]>([]);
+    const [books, setBooks] = useState<GetBookSchema[]>([]);
     // const [popupData, setPopupData] = useState<PopupSchema | null>(null);
     // const [showPopup, setShowPopup] = useState(false);
 
@@ -27,7 +27,12 @@ export default function Books() {
         requestBooks();
     }, []);
 
-    const columns: ColumnsType<BookSchema> = [
+    function handleDeleteBook(id: Number){
+        deleteBook(id);
+        requestBooks();
+    }
+
+    const columns: ColumnsType<GetBookSchema> = [
         {
             title: 'Titulo',
             dataIndex: 'title',
@@ -40,19 +45,33 @@ export default function Books() {
         },
         {
             title: 'Vendedor',
-            dataIndex: 'sellerId',
-            key: 'sellerId',
+            dataIndex: 'seller',
+            key: 'seller',
+            render: (seller, record) => {
+                return seller ? (<p>{seller.name}</p>) : (null);
+            }
         },
         {
             title: 'Autor',
-            dataIndex: 'authorId',
-            key: 'authorId',
+            dataIndex: 'author',
+            key: 'author',
         },
         {
             title: 'Descrição',
             dataIndex: 'description',
             key: 'description',
+           
         },
+        {
+            dataIndex: 'id',
+            key: 'id',
+            render: (id, record) => {
+                return(                
+                    <button onClick={() => handleDeleteBook(id)}>Excluir</button>
+                )
+            },
+        },
+        
         
         
     ];

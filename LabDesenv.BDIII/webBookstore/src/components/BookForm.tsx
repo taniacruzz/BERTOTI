@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { postBook } from '../services/BookService';
-import { BookSchema } from '../schemas/Book';
+import { PostBookSchema } from '../schemas/Book';
 
 interface BookFormProps {
     successCallback: () => void;
@@ -47,11 +47,15 @@ export default function BookForm({successCallback, errorCallback }: BookFormProp
         postBook({
             title: postBookTitle,
             bookType: postBookType,
-            sellerId: postBookSeller,
-            authorId: postBookAuthor,
+            seller: {
+                id: postBookSeller
+            },
+            author: {
+                id: postBookAuthor,
+            },
             description: postBookDescription,
             forSale: true,
-        } as BookSchema)
+        } as PostBookSchema)
         .then(() => successCallback());
     }
 

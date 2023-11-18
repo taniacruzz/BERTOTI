@@ -1,11 +1,11 @@
 
 import axios, { AxiosResponse } from 'axios';
-import { BookSchema } from '../schemas/Book';
+import { GetBookSchema, PostBookSchema } from '../schemas/Book';
 
 
 const API_URL = 'http://127.0.0.1:8080/books';
 
-async function mapResponse(response: AxiosResponse): Promise<BookSchema[]> {
+async function mapResponse(response: AxiosResponse): Promise<GetBookSchema[]> {
     return response.data.map((item: any) => ({
         id: item.id ? item.id : "N/A",
         title: item.title ? item.title : "N/A",
@@ -14,10 +14,10 @@ async function mapResponse(response: AxiosResponse): Promise<BookSchema[]> {
         authorId: item.authorId ? item.authorId : "N/A",
         description: item.description ? item.description : "N/A",
         forSale: item.forSale ? item.forSale : "N/A",
-    })) as BookSchema[]
+    })) as GetBookSchema[]
 }
 
-export async function postBook(book: BookSchema) {
+export async function postBook(book: PostBookSchema) {
     return await fetch(API_URL, {
         method: 'POST',
         headers: {
@@ -30,7 +30,14 @@ export async function postBook(book: BookSchema) {
     
 }
 
-export async function getBooks(): Promise<BookSchema[]> {
+export async function getBooks(): Promise<GetBookSchema[]> {
     const response = await axios.get(`${API_URL}`, {method: 'GET'});
     return await mapResponse(response);
+}
+
+export async function deleteBook(id: Number) {
+    return await fetch(`${API_URL}/${id}`, {
+        method: 'DELETE',
+    });
+    
 }
