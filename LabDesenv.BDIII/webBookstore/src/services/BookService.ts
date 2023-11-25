@@ -41,3 +41,27 @@ export async function deleteBook(id: Number) {
     });
     
 }
+export async function updateBook(id: Number) {
+    return await fetch(`${API_URL}/${id}/update`, {
+        method: 'POST',
+    });
+    
+}
+
+export async function postBooks(
+    previousBooks: PostBookSchema[],
+    books: PostBookSchema[],
+) {
+    return await Promise.all(
+        books.map(
+            book => {
+                for (const previousBook of previousBooks) {
+                    if (book.id != previousBook.id) continue;
+                    return updateBook(book.id);
+                }
+                return postBook(book);
+            }
+        )
+    );
+}
+

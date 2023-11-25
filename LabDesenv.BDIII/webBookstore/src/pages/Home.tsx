@@ -55,6 +55,9 @@ export default function Books() {
             title: 'Autor',
             dataIndex: 'author',
             key: 'author',
+            render: (author, record) => {
+                return author ? (<p>{author.name}</p>) : (null);
+            }
         },
         {
             title: 'Descrição',
