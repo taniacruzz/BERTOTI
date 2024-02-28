@@ -1,0 +1,3 @@
+interface EatBehaviour {
+    void eat();    
+}
