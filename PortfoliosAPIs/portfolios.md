@@ -58,7 +58,7 @@ Sistema Web para controle da jornada de trabalho do colaborador, com gestão de 
 - Typescript
 - React
 
-### Contribuições Individuais
+### Contribuições Individuais (papel: dev)
 - Desenvolvimento backend: a partir da modelagem de banco, fiz o código de todas as classes e das funções do service, repository e controller, conforme padrão do Spring.
 - Desenvolvimento frontend: tela de parametrização.
 
@@ -68,18 +68,23 @@ Sistema Web para controle da jornada de trabalho do colaborador, com gestão de 
 
   ---
 
-## 4º Semestre
+## 4º Semestre 
+[Repositorio](https://github.com/projetoKhali/api4?tab=readme-ov-file#sobre)
 
 ### Descrição
-(Descreva aqui as atividades realizadas e os objetivos alcançados no segundo semestre.)
+Uma aplicação web desenvolvida para monitorar e analisar métricas relacionadas a parceiros, áreas de especialização e certificações.
 
 ### Tecnologias Utilizadas
-- Tecnologia 1
-- Tecnologia 2
-- Tecnologia 3
+- Java
+- Spring
+- Docker
+- Typescript
+- Vue JS
 
-### Contribuições Individuais
-- (Descreva sua contribuição específica para o projeto ou atividades realizadas.)
-
+### Contribuições Individuais (papel: dev)
+- Desenvolvimento backend: setup do spring, DTOs para retornar o JSON com as informações solicitadas pela tela.
+- Desenvolvimento frontend: componente de pop up
+  
 ### Aprendizados Efetivos
-- (Liste os aprendizados ou habilidades adquiridas durante o semestre.)
+- Gerenciamento de tempo
+- Trabalho em equipe
