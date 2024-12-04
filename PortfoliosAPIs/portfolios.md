@@ -4,7 +4,7 @@
 [Repositorio](https://github.com/projetoKhali/Khali)
 
 ### Descrição
-Desenvolvimento de uma solução computacional que viabilize a aplicação da técnica de Avaliação 360° e a análise dos dados obtidos pelos alunos e instrutores da instituição de ensino PBLTeX, especializada em cursos e práticas de ensino aplicando PBL (Problem Based Learning)
+Desenvolvimento de uma solução computacional Desktop que viabilize a aplicação da técnica de Avaliação 360° e a análise dos dados obtidos pelos alunos e instrutores da instituição de ensino PBLTeX, especializada em cursos e práticas de ensino aplicando PBL (Problem Based Learning)
 
 ### Tecnologias Utilizadas
 - Python
@@ -30,14 +30,14 @@ Sistema Desktop para controle da jornada de trabalho do colaborador, com gestão
 
 ### Tecnologias Utilizadas
 - Java
-- Spring Boot
 - JavaFX
 - PostgreSQL
 
 ### Contribuições Individuais (papel: scrum master)
 - Divisão das funcionalidades em tarefas e sua distribuição entre a equipe, com o posterior acompanhamento do desempenho dos desenvolvedores
-- Desenvolvimento backend: calculo dos pontos relacionados a horas extras e sobreavisos; setup do SpringBoot.
-- Desenvolvimento frontend: telas de cadastro e gŕaficos.
+- Wireframe
+- Desenvolvimento backend: calculo de verbas, integração de filtros para extração do relatório.
+- Desenvolvimento frontend: tela de apontamentos de horas, tela de gestão do usuário Adm.
 
 ### Aprendizados Efetivos
 - Comunicação efetiva com a equipe
@@ -46,20 +46,25 @@ Sistema Desktop para controle da jornada de trabalho do colaborador, com gestão
 ---
 
 ## 3º Semestre
+[Repositorio](https://github.com/projetoKhali/api3)
 
 ### Descrição
-(Descreva aqui as atividades realizadas e os objetivos alcançados no segundo semestre.)
+Sistema Web para controle da jornada de trabalho do colaborador, com gestão de suas horas-extras e sobreavisos.
 
 ### Tecnologias Utilizadas
-- Tecnologia 1
-- Tecnologia 2
-- Tecnologia 3
+- Java
+- Spring
+- Docker
+- Typescript
+- React
 
 ### Contribuições Individuais
-- (Descreva sua contribuição específica para o projeto ou atividades realizadas.)
+- Desenvolvimento backend: a partir da modelagem de banco, fiz o código de todas as classes e das funções do service, repository e controller, conforme padrão do Spring.
+- Desenvolvimento frontend: tela de parametrização.
 
 ### Aprendizados Efetivos
-- (Liste os aprendizados ou habilidades adquiridas durante o semestre.)
+- Adaptabilidade
+- Autodidatismo
 
   ---
 
