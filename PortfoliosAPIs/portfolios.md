@@ -66,7 +66,7 @@ Sistema Web para controle da jornada de trabalho do colaborador, com gestão de 
 - Adaptabilidade
 - Autodidatismo
 
-  ---
+---
 
 ## 4º Semestre 
 [Repositorio](https://github.com/projetoKhali/api4?tab=readme-ov-file#sobre)
